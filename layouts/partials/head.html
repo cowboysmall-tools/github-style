@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#1e2327">
 
-    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="{{ "images/favicon.ico" | absURL }}">
-
-    <link crossorigin="anonymous" media="all"
-        rel="stylesheet" href="{{ "css/frameworks.css" | absURL }}" />
-    <link crossorigin="anonymous" media="all"
-        rel="stylesheet" href="{{ "css/github.css" | absURL }}" />
-
     <title>{{ if .IsHome }}{{ else }}{{ .Title }} - {{ end }}{{ .Site.Title }}</title>
 
-    {{ template "_internal/google_analytics_async.html" . }}
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="{{ "css/frameworks.css" | absURL }}" />
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="{{ "css/github.css" | absURL }}" />
+
+    <link type="image/x-icon" class="js-site-favicon" rel="icon" href="{{ "images/favicon.ico" | absURL }}">
 
 </head>
